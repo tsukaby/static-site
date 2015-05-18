@@ -1,0 +1,10 @@
+<IfModule mod_expires.c>
+# キャッシュの有効期限を設定
+ExpiresActive On
+ExpiresByType text/css "access plus 1 days"
+ExpiresByType image/gif "access plus 1 weeks"
+ExpiresByType image/jpeg "access plus 1 weeks"
+ExpiresByType image/jpg "access plus 1 weeks"
+ExpiresByType image/png "access plus 1 weeks"
+ExpiresByType application/x-javascript "access plus 1 weeks"
+</IfModule>
