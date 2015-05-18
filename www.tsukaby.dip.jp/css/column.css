@@ -1,0 +1,83 @@
+@charset "Shift_JIS";
+
+h1{
+	color:#0066CC;
+	line-height:100%;
+	font-size:x-large;
+	text-decoration:underline;
+	text-align:center;
+	margin-top:30px;
+	margin-bottom:50px;
+}
+
+h2{
+	text-align:left;
+	line-height:100%;
+	font-size:16pt;
+	font-weight:thin;
+	border-style:solid;
+	border-color:#0066FF;
+	border-width:0px 0px 1px 15px;
+}
+
+h3{
+	font-size:16px;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:left;
+}
+
+body{
+	color:#707070;
+	line-height:150%;
+	font-size:10pt;
+	text-align:left;
+	vertical-align:top;
+	padding:15px 45px;
+}
+
+a:link{
+	font-size:10pt;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:underline;
+	text-align:left;
+	vertical-align:
+}
+
+a:visited{
+	font-size:10pt;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:underline;
+	text-align:left;
+	vertical-align:
+}
+
+A:ACTIVE{
+	font-size : 10pt;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:underline;
+	text-align:left;
+	vertical-align:
+}
+
+A:HOVER{
+	color:#ff5500;
+	font-size : 10pt;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:underline;
+	text-align:left;
+	vertical-align:
+}
+
+.topics{
+	line-height:100%;
+	font-size:16pt;
+	border-style:solid;
+	border-color:#0066FF;
+	/* margin:上　右　下　左; */
+	border-width:0px 0px 1px 15px;
+}

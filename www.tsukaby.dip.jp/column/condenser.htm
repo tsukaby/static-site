@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 6.5.0.0 for Windows">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>VIA EPIA-6000MEのコンデンサ（破裂～修理）</TITLE>
+<LINK rel="stylesheet" href="../css/column.css" type="text/css">
+</HEAD>
+<BODY>
+<H1>VIA EPIA-6000MEのコンデンサ（破裂～修理）</H1>
+<H2>事の発端（破裂）</H2>
+<P>やったー！できたー！いよいよ通電、どきどき。<BR>
+<BR>
+ブスッ（ケースに電源を挿した）<BR>
+<BR>
+１<BR>
+２<BR>
+３<BR>
+４<BR>
+５・・・・・<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+ブシュー！！！！<BR>
+M/Bが霧だか煙だかを噴出。<BR>
+<BR>
+え、何！？<BR>
+<BR>
+あわてて電源を引き抜く俺。<BR>
+M/Bをよーく見ると、なんだかコンデンサが・・・・膨らんでいた。<BR>
+<BR>
+<IMG src="../picture/condenser/condenser000.jpg" width="640" height="480" border="0"><BR>
+見づらいけど矢印のコンデンサが膨らんでます・・・。</P>
+<H2>情報収集（調査）</H2>
+<P>友人に相談しながら色々調べてみた。<BR>
+<BR>
+こんな所が見つかる。<BR>
+<A href="http://www.geocities.co.jp/SiliconValley/6445/condenser/" target="_blank">電解コンデンサの大量死 テンプレサイト</A><BR>
+<BR>
+どうやらコンデンサの破裂はよくあることで、ちょっと昔（２００２年？）のM/Bは質が悪いコンデンサばかりだったらしく、よく破裂したらしい。<BR>
+このM/Bの破裂した３個のコンデンサはGSC製、1000μF（マイクロファラッド）6.3V<BR>
+テンプレによると同じコンデンサの破裂報告が・・・。<BR>
+そういうことか・・。<BR>
+<BR>
+破裂した要因は主に</P>
+<UL>
+  <LI>コンデンサ内の電解液不良
+  <LI>コンデンサの容量不足、つまり設計ミス
+</UL>
+<P>らしい。<BR>
+<BR>
+修理もできるらしく、修理したレポートもいくつか発見した。<BR>
+というわけで修理することに。</P>
+<H2>コンデンサ選び</H2>
+<P>色々な情報をまとめると</P>
+<UL>
+  <LI>容量ぎりぎりによる破裂も多いので、コンデンサは<B>多少容量多めでも良い場合もある</B>
+  <LI>電力不足になるので、やはり容量はピッタリの方が良い
+  <LI>普通のコンデンサではだめ、<B>低ESR</B>のコンデンサにする
+  <LI>メーカーにより質が違うのでテンプレのコンデンサのランク付け参照のこと
+  <LI>大きさも要注意場所によっては取り付け不可
+</UL>
+<P>みたいです。<BR>
+なかなかの定評があるニチコンHN 1500μF 10Vを３個、予備にルビコンLZH 1000μF
+6.3Vを３個購入することに決定！<BR>
+<BR>
+購入は秋葉原<A href="http://www.san-ei-denpa.com/" target="_blank">ラジオ館の三栄電波</A><BR>
+品揃えも豊富だし、PC用低ESRコーナーとかあったし、ここのオジサンまじGJ！</P>
+<H2>修理</H2>
+<P>必要な物はこんな感じ。<BR>
+<BR>
+<IMG src="../picture/condenser/condenser001.jpg" width="640" height="480" border="0"><BR>
+<BR>
+ハンダ吸い取り機は<B>必須</B>です。M/B逆さにしながらハンダ溶かしても垂れてきません。ので、高くついてしまうかも知れませんが購入してください。<BR>
+ちなみに私はラジオ館で買いました。<BR>
+<BR>
+作業に取り掛かる前にいくつか注意点があります。</P>
+<UL>
+  <LI>M/Bのパターンを絶対に、絶対に傷つけない
+  <LI>基盤はあまり暖めすぎない
+  <LI>ホールを丁寧に扱う
+</UL>
+<P>主にこの３点です。<BR>
+パターンというのは<BR>
+<BR>
+<IMG src="../picture/condenser/condenser003.jpg" width="640" height="480" border="0"><BR>
+この緑の細い線のことです。<BR>
+<BR>
+これがつまり回路で、もし隣の線と（ハンダ付けで）つながったり、傷つけて断線した場合は今度こそさようならです。<BR>
+絶対に気をつけてください。<BR>
+ただ、この面はコーティングが施してあるので、ハンダ付けの際にハンダの中の接着剤がついたり、ハンダごてをパターンにちょっとぶつけてしまっても問題はありません。<BR>
+リラックスして挑みましょう。<BR>
+<BR>
+ホールを丁寧にというのは、ホールを見ればわかります。銀色です、つまりコーティングが施してありません。そういう以前に、この穴がぼろぼろになるとコンデンサが刺さらなかったり、挿しても接触不良になります。ハンダ吸い取り機でちゃちゃっと済ませましょう。<BR>
+<BR>
+<BR>
+<BR>
+ハンダ付けの時はできればCPUを外した方がいいのですが、このM/Bは手間がかかるのでつけたままやります。<BR>
+<BR>
+コンデンサを取るときは片方の足を暖めてそこをちょっと抜いて、反対を・・・を繰り返します。<BR>
+強引にやってはいけません、ホールにダメージを与えないように。<BR>
+<BR>
+<IMG src="../picture/condenser/condenser002.jpg" width="640" height="480" border="0"><BR>
+<BR>
+とれました。<BR>
+<BR>
+このときコンデンサのどっちが＋でどっちが－か覚えておきましょう。<BR>
+ちなみにこのEPIA-M 6000EのM/Bには+/-が書いてあるので覚えなくても大丈夫です。<BR>
+<BR>
+取ったコンデンサはこれ。<BR>
+<BR>
+<IMG src="../picture/condenser/condenser004.jpg" width="640" height="480" border="0"><BR>
+<BR>
+ピントずれててわかんねーｗ<BR>
+微妙にもっこりです。<BR>
+<BR>
+全部取ったら次は取りつけです。<BR>
+コンデンサの足が<B>長いほうが＋</B>です。<BR>
+<BR>
+<IMG src="../picture/condenser/condenser005.jpg" width="640" height="480" border="0"><BR>
+つけかえ完了！<BR>
+<BR>
+とれたのはこいつら<BR>
+<IMG src="../picture/condenser/condenser010.jpg" width="640" height="480" border="0"><BR>
+ぐむむむ、このにっくき不良コンデンサめ！<BR>
+<BR>
+<BR>
+再び組み立てる。<BR>
+<IMG src="../picture/condenser/condenser006.jpg" width="640" height="480" border="0"><BR>
+<BR>
+他のPCから電力もらってCDドライブ動かします。<BR>
+<IMG src="../picture/condenser/condenser008.jpg" width="640" height="480" border="0"><BR>
+<BR>
+<BR>
+そしてインストール！<BR>
+<IMG src="../picture/condenser/condenser007.jpg" width="640" height="480" border="0"><BR>
+やったねFedoraCore！<BR>
+ちなみにこの後すぐにCentOSに切り替えました。<BR>
+それにしても生活感あふれる画像ですね。<BR>
+<BR>
+これにて終了です。<BR>
+コンデンサの修理は緊張するけど意外とあっさりできますよ！</P>
+<P align="right">掲載　2007/5/27</P>
+<H2>その後</H2>
+<P>設置から4ヶ月たちました。<BR>
+常時稼動ですので4*30day*24h<BR>
+120日、2880時間の連続起動です（再起等できっちり2880時間ではありませんが）<BR>
+<BR>
+使ってみた感じ、この性能で問題ないです。<BR>
+ただ同時に何アクセスもあるサイト運営なんかじゃ分かりませんけど。<BR>
+<BR>
+肝心の安全性、そして何よりあのコンデンサはどうなったかというと。<BR>
+<IMG src="../picture/condenser/condenser012.jpg" width="640" height="480" border="0" alt="無事でした"><BR>
+３つ全て無事です。<BR>
+もちろん他の全てのコンデンサも異常なし。<BR>
+<BR>
+ちなみにニチコンHN 1500μF 10Vを３個、予備にルビコンLZH 1000μF 6.3Vと、2種類コンデンサを買いましたが使ったのは予備の方です。予備の方が質も低いし値段も安いんですが、ただひとつ元のコンデンサと容量が同じという利点がありました。皆さんももし買うときはピッタリのこっちでもいいかもしれません。<BR>
+<BR>
+余談ですが床から2mの位置に置いておいたので、ケース内は極めて綺麗でした。写真の基盤を見て分かる通り殆ど埃がついていません。ファンレスだとそういう利点もありますね。<BR>
+</P>
+<P align="right">その後 掲載　2007/10/1</P>
+</BODY>
+</HTML>

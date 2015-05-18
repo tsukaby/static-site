@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 6.5.0.0 for Windows">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE></TITLE>
+<LINK rel="stylesheet" href="../css/column.css" type="text/css">
+</HEAD>
+<BODY>
+<H1>自宅で静音、節電サーバー - 構築編</H1>
+<P>パーツの購入も終わり、今回はいよいよ構築です。<BR>
+画像はありませんが、組み立てからOSインストールまでを書いていきます。<BR>
+</P>
+<H2>組み立て</H2>
+<P>サーバーが始めて自作PCという方もいらっしゃるんじゃないでしょうか。私はこれが初自作でした。<BR>
+組み立てについては詳しくないので、組み立てに詳しいサイトを訪れるのが良いかと思います。<BR>
+<BR>
+ここでは私が組み立てる際に注意した点などを書きます。<BR>
+<BR>
+まずぜーーーーーーーったいに注意してほしい事が</P>
+<UL>
+  <LI>ACアダプタをコネクタに挿し、ケースに繋いだ後、<B>絶対M/Bを上から見ない</B>。
+</UL>
+<P>VIA EPIA-M 6000Eを用意した方はこれによーーーーーーく注意してほしいです。<BR>
+理由は等は<A href="condenser.htm">VIA EPIA-6000MEのコンデンサ（破裂～修理）</A>で述べています。簡単に説明すると、<B>コンデンサが破裂したときコンデンサの中の電解液が目に入るかもしれない</B>、ということです。<BR>
+これは本当に気をつけてください、できれば他のM/Bも同じです。<BR>
+<BR>
+他には</P>
+<UL>
+  <LI>スイッチ等の配線を間違えないように
+</UL>
+<P>マニュアルは大抵英語ですが、よーく読んで確認しましょう。<BR>
+配線ミスはM/Bにダメージを与えます。最悪壊れますので注意しましょう。<BR>
+<BR>
+Procase3にはケースファンがついていますが、配線の必要はありません。<BR>
+<BR>
+注意点についてはこれで終わります。<BR>
+<BR>
+ちなみに組み立て完了はこんな感じ。<BR>
+<BR>
+<IMG src="../picture/condenser/condenser006.jpg" width="640" height="480" border="0"><BR>
+<BR>
+HDDの場所、ここであってるよな・・・？ｗ<BR>
+</P>
+<H2>起動、OSインストール</H2>
+<P>組み立てが終了した後はいよいよ通電です。<BR>
+<BR>
+上記で述べたACアダプタをコネクタに挿し、ケースに繋いだ後、<B>絶対M/Bを上から見ない</B>ということに気をつけて通電させます。<BR>
+なお、電源をコネクタに挿しただけで微量ながら通電するので<B>スイッチを入れることとは違います</B>。<BR>
+<BR>
+ケースに電源を繋いだ後１０秒ほど待ってみます。何もなければ大成功かもしれません。ここで以上がある場合、<B>コンデンサが破裂</B>します。<BR>
+<BR>
+コンデンサが破裂しても慌てる必要は全くありません。まずは電源を引っこ抜きます。<BR>
+そのM/Bはそのまま使うのは危険なので修理が必要です。<BR>
+修理は<A href="condenser.htm">VIA EPIA-6000MEのコンデンサ（破裂～修理）で行いました。</A><BR>
+<BR>
+次はいよいよOSインストールです。<BR>
+windowsを入れても良いですが、勉強のためにLinuxにします。<BR>
+ここで選んだのはCentOS4<BR>
+<BR>
+まずはCD（DVD）を用意します。<BR>
+これは元からあるwindowsで作っておきます（検索した場所からisoをDL、iso焼きをする）<BR>
+次に、windows機を開けて、windows機に挿してあるCDドライブをサーバー機に刺します。<BR>
+サーバー機の電力では足りないため、こうしてwindows機から電力を借りてCDドライブを動かしつつ、CDドライブをサーバーに繋ぐわけです。<BR>
+<BR>
+こんな感じ。<BR>
+<BR>
+<IMG src="../picture/condenser/condenser009.jpg" width="640" height="480" border="0"><BR>
+<BR>
+そして、サーバー機にモニタとキーボードを繋ぎます（配線作業時は<B>電源を絶対コンセントから抜きましょう</B>、<B>感電したら即死</B>です）<BR>
+<BR>
+まず、windows機の電源を入れておき、CDドライブを使用可に。<BR>
+次にサーバー機に電源を入れます。<BR>
+モニタに何か出力されれば大成功！！！<BR>
+<BR>
+CDドライブにOSのCDを入れてEnter<BR>
+CDからbootが始まり、いよいよインストールです。<BR>
+<BR>
+ここで是非ともお勧めしたいサイトを一つ。<BR>
+<A href="http://centossrv.com/" target="_blank">http://centossrv.com/</A><BR>
+<BR>
+インストールについてはこちらのほうが詳しいです。<BR>
+<BR>
+<BR>
+<BR>
+これにて終了です。<BR>
+</P>
+<P align="right">掲載　2007/5/27</P>
+</BODY>
+</HTML>

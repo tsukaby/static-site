@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 6.5.0.0 for Windows">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE></TITLE>
+<LINK rel="stylesheet" href="../css/column.css" type="text/css">
+</HEAD>
+<BODY>
+<H1>自宅で静音、節電サーバ - Atom乗り換え編</H1>
+<P>VIAのサーバを組んで２年半。そろそろ買い換えたいと思っていました。<BR>
+というわけで以下のことを理由にサーバ新調です。<UL>
+  <LI>CPUの仕様上、CentOS5に移行できない。
+  <LI>iノードテーブルが逝ったのか、スーパーブロックが逝ったのか物理故障か知らないけどHDDが壊れた。
+  <LI>やっぱりEden 600MHzじゃ遅い。
+</UL>
+<P>結論から言うと以下の通り</P>
+<UL>
+  <LI>Atom最高！D945GCLF2最高！ファン有りだけど十分静音だと思う。
+  <LI>しかしProcase3+D945GCLF2は無理。ATX12V4pinコネクタ必須。
+  <LI>さらに言うと件のコネクタはHDDとかの4pinから変換できるコネクタが売ってるけどそれは使えない模様。
+  <LI>つまりD945GCLF2を使うならちゃんとしたATX電源から件の4pinコネクタを取る必要有り。
+</UL>
+<P>それでは構想～構築までをまとめて。</P>
+<H2>構想</H2>
+<P>今回乗り換えに至った一番の理由はHDD故障。バックアップをHDD内にしか取っておかなかったせいで色々痛い目に合いました。<BR>
+なので今回はできればもっと安全設計にしたい！というわけでRAID1（ミラーリング）決定！<BR>
+メモリは正直どうでもいいので適当に1Gとかで。<BR>
+ケースはあるのでそれを使って、<BR>
+一番の問題はM/Bでした。勿論今回も出来るだけ静音、節電を目指すのでminiITXは決定でしたが・・・<BR>
+C7かAtomどちらが良いのでしょう？<BR>
+調べたところ断然Atomのようでした。電力的にも性能的にも。<BR>
+というわけでAtomのM/Bを購入予定。ここでAtomには大きくZシリーズ、Nシリーズ、230,330シリーズがあることを知る。<BR>
+できればAtomのZシリーズが良かった。こいつらはTDPがどれも2Wくらいで最高の節電CPU。<BR>
+ところがZシリーズはどうやらメーカーのモバイル用途にしか提供されていないらしく、miniITXのM/Bには全く無いらしい。<BR>
+残るはNか230,330。NもTDP2.5Wと最高の節電CPUだったんですが、もう遅いマシンは勘弁。ということで<BR>
+ファン有りだけど思い切ってデュアルコアのAtom 330に決定。Atom 330ということはもう自然とM/Bも決定。intelのD945GCLF2。<BR>
+<BR>
+こうして購入品は一通り出揃ったのでいざ秋葉原へ。</P>
+<H2>購入</H2>
+<P>ほとんど秋葉原で購入しました。
+<TABLE border="1" cellspacing="0" cellpadding="5">
+  <TBODY>
+    <TR>
+      <TD>パーツ</TD>
+      <TD>パーツ詳細</TD>
+      <TD>値段</TD>
+    </TR>
+    <TR>
+      <TD>M/B</TD>
+      <TD>Intel D945GCLF2</TD>
+      <TD align="right">8770\</TD>
+    </TR>
+    <TR>
+      <TD>CPU</TD>
+      <TD>M/B搭載</TD>
+      <TD align="right">-</TD>
+    </TR>
+    <TR>
+      <TD>メモリ</TD>
+      <TD>サムスン純正 DDR533 1G</TD>
+      <TD align="right">1660\</TD>
+    </TR>
+    <TR>
+      <TD>HDD*2</TD>
+      <TD>Travelstar 5K500.B 250G</TD>
+      <TD align="right">10540\</TD>
+    </TR>
+    <TR>
+      <TD>ケーブル</TD>
+      <TD>SATAケーブル</TD>
+      <TD align="right">690\</TD>
+    </TR>
+    <TR>
+      <TD>ケーブル</TD>
+      <TD>4pin→SATA電源*2 変換ケーブル</TD>
+      <TD align="right">550\</TD>
+    </TR>
+    <TR>
+      <TD>計</TD>
+      <TD>-</TD>
+      <TD align="right">22210\</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<P>ハードウェアの成長は物凄いですね。ちなみに２年半前と比べるとこんな感じです。</P>
+<TABLE border="1" cellspacing="0" cellpadding="5">
+  <TBODY>
+    <TR>
+      <TD>パーツ</TD>
+      <TD>パーツ詳細</TD>
+      <TD>値段</TD>
+    </TR>
+    <TR>
+      <TD>M/B</TD>
+      <TD>VIA EPIA-M 6000E</TD>
+      <TD align="right">4998\</TD>
+    </TR>
+    <TR>
+      <TD>CPU</TD>
+      <TD>M/B搭載</TD>
+      <TD align="right">-</TD>
+    </TR>
+    <TR>
+      <TD>メモリ</TD>
+      <TD>ノーブランド PC2100 512M</TD>
+      <TD align="right">4130\</TD>
+    </TR>
+    <TR>
+      <TD>HDD</TD>
+      <TD>Travelstar 5K100 40G</TD>
+      <TD align="right">5660\</TD>
+    </TR>
+    <TR>
+      <TD>ケース</TD>
+      <TD>Procase3</TD>
+      <TD align="right">10185\</TD>
+    </TR>
+    <TR>
+      <TD>ケーブル</TD>
+      <TD>2.5to3.5インチIDEケーブル</TD>
+      <TD align="right">740\</TD>
+    </TR>
+    <TR>
+      <TD>計</TD>
+      <TD>-</TD>
+      <TD align="right">25713\</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<P>M/Bとケースとケーブルの値段はほとんど変わらないですが、HDDとメモリが凄いですね。<BR>
+<BR>
+次はいよいよ構築編です。</P>
+<H2>構築１日目</H2>
+<P>買ってきて早速組み立てです。<BR>
+前にもやったことあるし、PCは何度も掃除でばらしてるのでちょいちょいっと。<BR>
+<BR>
+自分のProcase3はシャドウベイが１つしか無いのですが、ベイの上側と下側で上手く2.5inchHDDが２個付くようになってます。凄い！<BR>
+所がここでSATA電源ケーブルにL型（コネクタの先がL字）を買ってきてしまったことに気づく。<BR>
+HDDはシャドウベイにぴったりくっ付いているので刺さらない・・・！<BR>
+とりあえずHDDは宙ぶらりんにしておいて、起動！<BR>
+電源オン！・・・あれ、モニタに何も写らないぞ？・・・プシューン<BR>
+<BR>
+なぜ電源が切れる・・・！<BR>
+<BR>
+配線ミスを疑うもミスっておらず。しかしよーく説明書を見ると、どうやらATX12V4pin（田の字4pin）を刺せと書いてある。<BR>
+え・・・このケース（ACアダプタ付属電源基盤）に無いんですが・・・。<BR>
+というわけで完全に起動せず・・・・明らかに調査不足でした。<BR>
+仕方が無いので使っていないサブPCのATX電源を拝借して起動。・・あ、やっぱり田の字4pinは必須なのね。。。<BR>
+<BR>
+配線露出状態でOSをセットアップし、Amazonで足りないケーブルを注文。<BR>
+足りないケーブルは</P>
+<UL>
+  <LI>HDD等の4pinケーブルを２つに分岐するケーブル
+  <LI>4pinからATX12V4pinへ変換するケーブル
+  <LI>4pinからSATA*2へ変換するストレートコネクタのケーブル
+</UL>
+<P>後はAmazonから届けば完璧！？次回に続く！</P>
+<H2>構築２日目</H2>
+<P>Amazonから商品が届き早速配線。・・・ところが起動しない。<BR>
+ええっ！？ちゃんと変換してるだろ？ちゃんと田の字4pinに刺してるだろ？<BR>
+原因は不明だが調べると、どうやらintelはこの変換ケーブルを推奨していないらしい。<BR>
+なのでここからは推測だけど、恐らく変換ケーブルでの動作をさせないために電源Onから切断までの数秒間は4pinに電気流してないのではないかと。<BR>
+<BR>
+というわけで結果は省スペースならず・・・。microATXのスリムケースにminiITXのM/Bを格納することに・・・。<BR>
+Procase3で行きたかったのになあ。<BR>
+<BR>
+ちなみにD945GCLF2ですがファン音も非常に小さく、ホームサーバ用には十分な性能が出てると思います。<BR>
+少なくともEden時代と比較してPHPのWebページを見るだとか、何かをインストールするだとかの時格段に早くなったと感じます。<BR>
+<BR>
+Atom 330　オススメですよ。ただATX12V4pinにだけは気をつけましょう。</P>
+<P align="right">掲載　2007/5/27</P>
+</BODY>
+</HTML>

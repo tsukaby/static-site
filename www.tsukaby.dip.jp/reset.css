@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/* @group reset */
+
+*{margin: 0;padding: 0}
+
+a { text-decoration : none}
+ul, ol { list-style : none}
+img { vertical-align : middle}
+
+/* @end */

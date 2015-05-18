@@ -1,0 +1,36 @@
+User-agent: *
+Disallow: /blog/wp-admin
+Disallow: /blog/wp-includes
+Disallow: /blog/wp-content/plugins
+Disallow: /blog/wp-content/cache
+Disallow: /blog/wp-content/themes
+Disallow: /blog/trackback
+Disallow: /blog/comments
+Disallow: /blog/category/*/*
+Disallow: */trackback
+Disallow: */comments
+Allow: /blog/wp-content/uploads
+
+Disallow: /*.php$
+Disallow: /*.js$
+Disallow: /*.inc$
+Disallow: /*.css$
+Disallow: /*.gz$
+Disallow: /*.wmv$
+Disallow: /*.cgi$
+Disallow: /*.xhtml$
+
+# allow google image bot to search all images
+User-agent: Googlebot-Image
+Disallow:
+Allow: /*
+ 
+# allow Google adsense bot on entire site
+User-agent: Mediapartners-Google*
+Disallow:
+Allow: /*
+
+# BEGIN XML-SITEMAP-PLUGIN
+Sitemap: http://tsukaby.dip.jp/sitemap.xml
+# END XML-SITEMAP-PLUGIN
+
