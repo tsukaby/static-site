@@ -7,17 +7,6 @@ User-agent: Mediapartners-Google
 Allow: /*
 
 User-agent: *
-Disallow: /tech_blog/wp-admin
-Disallow: /tech_blog/wp-includes
-Disallow: /tech_blog/wp-content/plugins
-Disallow: /tech_blog/wp-content/cache
-Disallow: /tech_blog/wp-content/themes
-Disallow: /tech_blog/*/trackback
-Disallow: /tech_blog/*/comments
-Disallow: /tech_blog/*/category/*
-Disallow: /tech_blog/*/page/*
-Disallow: /tech_blog/*/tag/*
-Allow: /tech_blog/*/wp-content/uploads
 Disallow: /WicketMyBatisGuice
 Disallow: /LoginSystem
 Disallow: /*?*
@@ -31,6 +20,4 @@ Disallow: /*.wmv$
 Disallow: /*.cgi$
 Disallow: /*.xhtml$
 
-# BEGIN XML-SITEMAP-PLUGIN
-Sitemap: http://tsukaby.com/sitemap.xml
-# END XML-SITEMAP-PLUGIN
+Sitemap: http://www.tsukaby.com/sitemap.xml
